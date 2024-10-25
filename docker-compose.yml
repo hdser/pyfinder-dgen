@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  data_generator:
+    build: .
+    container_name: data_generator_container
+    volumes:
+      - ./output:/app/output
+    environment:
+      - OUTPUT_DIR=/app/output
+    stdin_open: true
+    tty: true

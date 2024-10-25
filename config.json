@@ -1,0 +1,64 @@
+[
+    {
+        "output_dir": "data_bottleneck",
+        "num_addresses": 1000000,
+        "chunk_size": 100000,
+        "n_jobs": 8,
+        "avg_trust_connections": 5.0,
+        "avg_tokens_per_user": 5.0,
+        "network_type": "BOTTLENECK",
+        "network_pattern": {
+            "num_bottlenecks": 3,
+            "bottleneck_connections": 5,
+            "min_tokens_per_address": 3,
+            "target_tokens_per_address": 5
+        }
+    },
+    {
+        "output_dir": "data_community",
+        "num_addresses": 1000000,
+        "chunk_size": 100000,
+        "n_jobs": 8,
+        "avg_trust_connections": 8.0,
+        "avg_tokens_per_user": 6.0,
+        "network_type": "COMMUNITY",
+        "network_pattern": {
+            "num_communities": 5,
+            "community_density": 0.7,
+            "inter_community_density": 0.1,
+            "min_tokens_per_address": 3,
+            "target_tokens_per_address": 6
+        }
+    },
+    {
+        "output_dir": "data_core_periphery",
+        "num_addresses": 1000000,
+        "chunk_size": 100000,
+        "n_jobs": 8,
+        "avg_trust_connections": 10.0,
+        "avg_tokens_per_user": 8.0,
+        "network_type": "CORE_PERIPHERY",
+        "network_pattern": {
+            "core_size_ratio": 0.1,
+            "token_concentration": 0.8,
+            "min_tokens_per_address": 4,
+            "target_tokens_per_address": 8
+        }
+    },
+    {
+        "output_dir": "data_large_scale_free",
+        "num_addresses": 1000000,
+        "chunk_size": 100000,
+        "n_jobs": 8,
+        "avg_trust_connections": 15.0,
+        "avg_tokens_per_user": 10.0,
+        "network_type": "SCALE_FREE",
+        "network_pattern": {
+            "hub_nodes": 50,
+            "hub_connection_ratio": 0.2,
+            "token_concentration": 0.6,
+            "min_tokens_per_address": 5,
+            "target_tokens_per_address": 10
+        }
+    }
+]
