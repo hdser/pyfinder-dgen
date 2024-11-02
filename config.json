@@ -1,50 +1,50 @@
 [
     {
         "output_dir": "data_bottleneck",
-        "num_addresses": 1000000,
-        "chunk_size": 10000,
+        "num_addresses": 10000,
+        "chunk_size": 2000,
         "n_jobs": 8,
-        "avg_trust_connections": 5.0,
-        "avg_tokens_per_user": 5.0,
+        "avg_trust_connections": 10.0,
+        "avg_tokens_per_user": 20.0,
         "network_type": "BOTTLENECK",
-        "run_tests": false,
+        "run_tests": true,
         "network_pattern": {
             "num_bottlenecks": 3,
-            "bottleneck_connections": 5,
+            "bottleneck_connections": 15,
             "min_tokens_per_address": 3,
-            "target_tokens_per_address": 5,
-            "reciprocal_trust_ratio": 0.3
+            "target_tokens_per_address": 15,
+            "reciprocal_trust_ratio": 0.7
         }
     },
     {
         "output_dir": "data_community",
         "num_addresses": 100000,
-        "chunk_size": 10000,
+        "chunk_size": 2000,
         "n_jobs": 8,
-        "avg_trust_connections": 8.0,
-        "avg_tokens_per_user": 6.0,
+        "avg_trust_connections": 20.0,
+        "avg_tokens_per_user": 10.0,
         "network_type": "COMMUNITY",
-        "run_tests": false,
+        "run_tests": true,
         "network_pattern": {
-            "num_communities": 5,
+            "num_communities": 15,
             "community_density": 0.7,
             "inter_community_density": 0.1,
             "min_tokens_per_address": 3,
             "target_tokens_per_address": 6,
-            "reciprocal_trust_ratio": 0.3
+            "reciprocal_trust_ratio": 0.7
         }
     },
     {
         "output_dir": "data_core_periphery",
-        "num_addresses": 1000000,
-        "chunk_size": 10000,
+        "num_addresses": 10000,
+        "chunk_size": 2000,
         "n_jobs": 8,
         "avg_trust_connections": 10.0,
         "avg_tokens_per_user": 8.0,
         "network_type": "CORE_PERIPHERY",
-        "run_tests": false,
+        "run_tests": true,
         "network_pattern": {
-            "core_size_ratio": 0.1,
+            "core_size_ratio": 0.5,
             "token_concentration": 0.8,
             "min_tokens_per_address": 4,
             "target_tokens_per_address": 8,
@@ -53,20 +53,20 @@
     },
     {
         "output_dir": "data_large_scale_free",
-        "num_addresses": 1000000,
-        "chunk_size": 10000,
+        "num_addresses": 10000,
+        "chunk_size": 2000,
         "n_jobs": 8,
         "avg_trust_connections": 15.0,
         "avg_tokens_per_user": 10.0,
         "network_type": "SCALE_FREE",
-        "run_tests": false,
+        "run_tests": true,
         "network_pattern": {
             "hub_nodes": 1000,
-            "hub_connection_ratio": 0.2,
+            "hub_connection_ratio": 0.5,
             "token_concentration": 0.6,
             "min_tokens_per_address": 5,
             "target_tokens_per_address": 10,
-            "reciprocal_trust_ratio": 0.3
+            "reciprocal_trust_ratio": 0.6
         }
     }
 ]
