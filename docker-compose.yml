@@ -1,12 +1,17 @@
 version: '3.8'
 
 services:
-  data_generator:
-    build: .
-    container_name: data_generator_container
+  pyfinder_dgen:
+    build:
+      context: .
+      args:
+        USER_ID: ${UID}
+        GROUP_ID: ${GID}
+    container_name: pyfinder_dgen
     volumes:
       - ./output:/app/output
     environment:
       - OUTPUT_DIR=/app/output
+    user: "${UID}:${GID}"
     stdin_open: true
     tty: true
