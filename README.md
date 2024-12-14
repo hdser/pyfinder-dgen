@@ -1,9 +1,6 @@
-# PyFinder-DGen: PyFinder Data Generator
+![Header](img/header-pyfinder-dgen.png)
 
-<img src="img/pyfinderdgen.webp" alt="pyfinder" style="height:350px;width:900px;">
-
-
-A network generator for creating synthetic trust networks with various topological patterns. This tool is designed to generate realistic network structures for testing and simulation purposes.
+__PyFinder-DGen__ is a network generator for creating synthetic trust networks with various topological patterns. This tool is designed to generate realistic network structures for testing and simulation purposes.
 
 ## Features
 
